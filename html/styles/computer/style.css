@@ -602,5 +602,11 @@ body.terminal {
 #content input:valid::before {
   content: "Y";
 }
+#content select {
+  background-color: var(--bg);
+  color: var(--color);
+  border-color: var(--border-color);
+  min-width: 20px;
+}
 
 /*# sourceMappingURL=style.css.map */

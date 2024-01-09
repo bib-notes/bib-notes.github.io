@@ -731,4 +731,9 @@ body.terminal {
             content: "Y";
         }
     }
+
+    select {
+        @include colors;
+        min-width: 20px;
+    }
 }

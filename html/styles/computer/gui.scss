@@ -1,0 +1,14 @@
+@import url("style.css");
+
+.terminal {
+    iframe {
+        min-width: 100px;
+        min-height: 100px;
+    }
+
+    #search-box {
+        button {
+            @include colors;
+        }
+    }
+}
