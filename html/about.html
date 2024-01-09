@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="content-type" content="application/html" />
+
+    <title>bib-notes</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="styles/reset.css" type="text/css" />
+    <link rel="stylesheet" href="styles/computer/style.css" type="text/css" />
+    <script src="js/script.js" type="text/javascript"></script>
+    <script src="js/functions.js" type="text/javascript"></script>
+
+</head>
+<body class="terminal">
+    <div id="screen" data-color="red">
+        <header id="logo">
+            <h1>T3rminal-XXX</h1>
+        </header>
+        <div id="crt">
+            <div id="scanline"></div>
+
+            <div id="container">
+                <nav id="nav-strip">
+                    <a href="#">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="#">Forms</a>
+                    <a href="#">Forum</a>
+                    <a href="#">Test</a>
+                </nav>
+                <!--For displaying Section current Section-->
+                <!-- <div id="nav-box">
+                    <button id="prev"><-</button>
+
+                    <button id="next">-></button>
+
+                </div> -->
+                <button class="nav-btn" id="nav-toggle">
+                    <img src="img/menu.png" width="16" height="16" />
+                </button>
+                <aside id="nav-list" data-toggle="on">
+                    <h2>Go To </h2>
+                    <hr />
+                    <nav id="sec-list">
+                        <button class="sec-btn" data-link="home" data-active>Home</button>
+                        <button class="sec-btn" data-link="test">About</button>
+                        <button class="sec-btn" data-link="test">test</button>
+                        <button class="sec-btn" data-link="apps">apps</button>
+
+                    </nav>
+                </aside>
+                <main id="content">
+
+                    <h1 class="title">Test</h1>
+                    <hr />
+                    <section id="home" data-toggle="on">
+                        <h1 class="title">Home</h1>
+
+                        <blockquote>
+                            <p>This is a blockquote.</p>
+                        </blockquote>
+                        <!-- <form>
+                            <input type="text" width="25">
+                            <input type="tel" width="25">
+                            <input type="search" width="25">
+                            <input type="" width="25">
+                            <input type="text" width="25">
+                            <input type="text" width="25">
+                        </form> -->
+                        <!-- <p id="glitch">
+                            This is a glitch paragraph
+                            <blockquote>
+                                block quote
+                            </blockquote>
+                        </p> -->
+                    </section>
+                    <section id="test" data-toggle="off">
+                        <h1 class="title">Template</h1>
+                        <p>This is Test 1 Section</p>
+                        <blockquote>
+                            <p>This is a blockquote.</p>
+                        </blockquote>
+                        <ul>
+                            <li>List Item</li>
+                            <li>List Item</li>
+                            <li>List Item</li>
+                            <li>List Item</li>
+                            <li>List Item</li>
+                        </ul>
+                        <code>
+                            out.print("Hello World");
+                        </code>
+                        <details>
+                            <summary>Summary Box</summary>
+                            <p>
+                                This is a summary Box. This is where I can plase large
+                                portions of text into.
+                            </p>
+                            <!--<form>
+                                <fieldset>
+                                    <legend>Form</legend>
+                                    <label for="input1">input text:</label>
+                                    <input type="text" id="input1" />
+                                    <input type="button" value="wheat_flour" title="button"  />
+                                </fieldset>
+
+                            </form>-->
+                        </details>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Column 1</th>
+                                    <th>Column 2</th>
+                                    <th>Column 3</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>ABC</td>
+                                    <td>123</td>
+                                    <td>@#$</td>
+                                </tr>
+                                <tr>
+                                    <td>ABC</td>
+                                    <td>123</td>
+                                    <td>@#$</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </section>
+                    <section id="test2" data-toggle="off">
+                        <h2>Test 2</h2>
+                        <progress max="10" value="5"></progress>
+                        <p>This is Test 2 Section</p>
+                    </section>
+                    <section id="test3" data-toggle="off">
+                        <h2>Test 3</h2>
+
+                        <p>This is Test 1 Section</p>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Column 1</th>
+                                    <th>Column 2</th>
+                                    <th>Column 3</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>ABC</td>
+                                    <td>123</td>
+                                    <td>@#$</td>
+                                </tr>
+                                <tr>
+                                    <td>ABC</td>
+                                    <td>123</td>
+                                    <td>@#$</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </section>
+                    <section id="about" data-toggle="off">
+                    </section>
+                </main>
+            </div>
+        </div>
+
+        <!-- <div id="scroll"></div> -->
+
+    </div>
+</body>
+</html>
