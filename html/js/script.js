@@ -1,3 +1,7 @@
+const element_tags = {
+    btn: "BUTTON",
+    sect: "SECTION"
+}
 $(document).ready((evt) => {
     $("#content section").each(function (num, element) {
 
