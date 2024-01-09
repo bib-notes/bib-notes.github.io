@@ -19,6 +19,7 @@ $(document).ready((evt) => {
 
     });
     $id("nav-toggle").setAttribute("onclick", "toggle_display('nav-list');");
+
     // $("#nav-toggle").click(toggle_display("nav-box"));
 
 });

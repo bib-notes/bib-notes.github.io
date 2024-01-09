@@ -10,17 +10,14 @@ const $sel = function (selector) {
     return document.querySelector(selector);
 }
 /**
- *  
+ *  changes section
  * @param {string} id 
  */
 function changeSection(id) {
-    //console.log("success: " + id);
     let sections = document.getElementsByTagName("section");
     var section = null;
     let btn = $('.sect-btn[data-link="' + id + '"]');
     let btns = document.getElementsByClassName('sec-btn');
-    //TODO: Toggle Sections
-    // [ONLY ONE SECTION CAN BE VISIBLE AT A TIME]
     var i;
     for (i = 0; i < sections.length; i++) {
         if (sections[i].id == id) {

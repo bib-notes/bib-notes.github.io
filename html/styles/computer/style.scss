@@ -513,6 +513,7 @@ body.terminal {
 
         #section {
             font: 14px Rainbow100, var(--text-font);
+            overflow-y: auto;
         }
     }
 
@@ -613,11 +614,28 @@ body.terminal {
     }
 
     a {
+        color: $color;
+
+        &:after {
+            color: var(--blue-fg);
+            content: "[→]";
+        }
+
         &:hover {
+            color: var(--bg);
+            background-color: var(--color);
         }
 
         &:active {
+            color: var(--green-fg);
         }
+
+        &:visited:before {
+			content: "V_";
+        }
+		&:inactive{
+			text-decoration: strike-through;
+		}
     }
 
     ul {

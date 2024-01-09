@@ -1,14 +1,23 @@
-@import url("style.css");
+@import url("./style.css");
 
 .terminal {
-    iframe {
-        min-width: 100px;
-        min-height: 100px;
-    }
-
-    #search-box {
-        button {
+    #content {
+        iframe {
             @include colors;
+            min-width: 100px;
+            min-height: 100px;
+
+            * {
+            }
+        }
+
+        #search-box {
+            display: block;
+            padding: 5px;
+
+            button {
+                @include colors;
+            }
         }
     }
 }

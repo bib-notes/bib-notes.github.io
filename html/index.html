@@ -1,15 +1,17 @@
 ﻿<!DOCTYPE html>
-
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="content-type" content="application/html" />
-
+    <meta name="description" content="bib notes" />
+    <meta name="keywords" content="terminal " />
+    <meta name="author" content="E" />
     <title>bib-notes</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="icon" href="img/favicon.ico" sizes="16x16" />
     <link rel="stylesheet" href="styles/reset.css" type="text/css" />
     <link rel="stylesheet" href="styles/computer/style.css" type="text/css" />
     <link rel="stylesheet" href="styles/computer/gui.css" type="text/css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="js/script.js" type="text/javascript"></script>
     <script src="js/functions.js" type="text/javascript"></script>
 
@@ -17,7 +19,7 @@
 <body class="terminal">
     <div id="screen" data-color="red">
         <header id="logo">
-            <h1>T3rminal-XXX</h1>
+            <h1>b1b-n07e$</h1>
         </header>
         <div id="crt">
             <div id="scanline"></div>
@@ -53,7 +55,7 @@
                 </aside>
                 <main id="content">
 
-                    <h1 class="title">Test</h1>
+                    <h1 class="title">Home</h1>
                     <hr />
                     <section id="home" data-toggle="on">
                         <h1 class="title">Bib Notes</h1>
@@ -62,20 +64,24 @@
                             This Website is for [REDACTED] Purposes.
                         </blockquote>
 
-                    </section>
-                    <section id="bib" data-toggle="off">
-                        <h1 class="title">bib</h1>
-                        <p>This is where you can review [REDACTED]</p>
+                        <!--<p>This is where you can review [REDACTED]</p>-->
                         <div id="search-box">
                             <select id="book">
                             </select>
                             <input type="text" id="" />
                             <button id="search-btn">[→]</button>
                         </div>
-                        <iframe id="mynotes" title="notes" src=""></iframe>
-                        <code>
-                            out.print("Hello World");
-                        </code>
+                        <iframe id="bib-frame" title="bib" srcdoc="./bib.html"
+                                width="500" height="300" referrerpolicy="no-referrer">
+                            <p> Iframe Not Supported by Browser.</p>
+                        </iframe>
+                        <iframe id="test" title="test"
+                                src="https://www.w3schools.com/tags/tag_iframe.asp"
+                                referrerpolicy="origin"></iframe>
+                    </section>
+                    <section id="bib" data-toggle="off">
+                        <h1 class="title">bib</h1>
+
                         <details>
                             <summary>Summary Box</summary>
                             <p>
@@ -104,7 +110,7 @@
                         <h4>Other</h4>
                         <ul>
                             <li><a href="https://444prophecynews.com/">444</a></li>
-                            <li><a href=""></a></li>
+                            <li><a href="https://aruljohn.com/Bible/">_bb</a></li>
                             <li></li>
                             <li></li>
                         </ul>
@@ -135,14 +141,14 @@
                             </tbody>
                         </table>
                     </section>
-                    <section id="about" data-toggle="off">
-                    </section>
+
                 </main>
             </div>
         </div>
 
         <!-- <div id="scroll"></div> -->
-
+        <footer>
+        </footer>
     </div>
 </body>
 </html>

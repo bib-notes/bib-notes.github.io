@@ -442,6 +442,7 @@ body.terminal {
 }
 #container #nav-box #section {
   font: 14px Rainbow100, var(--text-font);
+  overflow-y: auto;
 }
 #container #nav-list {
   background-color: var(--bg);
@@ -525,6 +526,26 @@ body.terminal {
 }
 #content code {
   font-family: var(--text-font);
+}
+#content a {
+  color: var(--color);
+}
+#content a:after {
+  color: var(--blue-fg);
+  content: "[→]";
+}
+#content a:hover {
+  color: var(--bg);
+  background-color: var(--color);
+}
+#content a:active {
+  color: var(--green-fg);
+}
+#content a:visited:before {
+  content: "V_";
+}
+#content a:inactive {
+  text-decoration: strike-through;
 }
 #content ul {
   list-style-type: var(--start);
