@@ -277,6 +277,7 @@ body.terminal {
   padding: 5px;
   font-family: AcerVga8_2y, var(--text-font);
   font-size: 16px;
+  overflow-y: auto;
 }
 .terminal #footer {
   text-decoration: none;
@@ -295,7 +296,9 @@ body.terminal {
   left: 0;
   width: 100%;
   height: 100%;
+  background-color: var(--bg);
   background-image: radial-gradient(transparent 10%, rgba(0, 0, 0, 0.5) 90%);
+  opacity: 0.75;
 }
 #screen::after {
   width: 100%;
@@ -317,7 +320,7 @@ body.terminal {
 }
 
 #crt {
-  animation: radial-gradient(ellipse, transparent, rgba(0, 0, 0, 0.5) 90%);
+  background-image: radial-gradient(ellipse, transparent, rgba(0, 0, 0, 0.5) 90%);
   /*&::before {
       @include pseudo-effects();
       content:"";
@@ -548,6 +551,10 @@ body.terminal {
 }
 #content ul {
   list-style-type: var(--start);
+}
+#content ul li {
+  margin: 1px 0px;
+  padding-left: 5px;
 }
 #content blockquote {
   border: 2px solid var(--color);
