@@ -251,7 +251,7 @@ body.terminal {
   background-color: var(--bg);
   color: var(--color);
   overflow-y: hidden;
-  animation: shadow 3s infinite, box-shadow 3s infinite;
+  animation: shadow 3s infinite, box-shadow 3s infinite, text-flicker 0.01s infinite;
 }
 .terminal #screen #container {
   width: 100%;
@@ -277,8 +277,6 @@ body.terminal {
   padding: 5px;
   font-family: AcerVga8_2y, var(--text-font);
   font-size: 16px;
-  overflow-y: auto;
-  animation: text-flicker 0.01s infinite;
 }
 .terminal #footer {
   text-decoration: none;
@@ -319,6 +317,7 @@ body.terminal {
 }
 
 #crt {
+  animation: radial-gradient(ellipse, transparent, rgba(0, 0, 0, 0.5) 90%);
   /*&::before {
       @include pseudo-effects();
       content:"";
@@ -495,7 +494,7 @@ body.terminal {
 }
 
 #content {
-  animation: text-flicker 0.01s infinite;
+  overflow-y: auto;
 }
 #content *:is(h1, h2, h3, h4, h5, h6) {
   font-family: IBM_BIOS_2y, var(--text-font);

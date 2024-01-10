@@ -1,3 +1,17 @@
+/**
+    * @description      : 
+    * @author           : x
+    * @group            : 
+    * @created          : 09/01/2024 - 18:32:43
+    * 
+    * MODIFICATION LOG
+    * - Version         : 1.0.0
+    * - Date            : 09/01/2024
+    * - Author          : x
+    * - Modification    : 
+**/
+
+
 const element_tags = {
     btn: "BUTTON",
     sect: "SECTION"

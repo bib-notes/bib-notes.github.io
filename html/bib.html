@@ -1,21 +1,76 @@
+<!DOCTYPE html>
 <html>
+
 <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="content-type" content="application/html" />
+
     <title>bib</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <link rel="stylesheet" href="styles/reset.css" type="text/css" />
     <link rel="stylesheet" href="styles/computer/style.css" type="text/css" />
     <link rel="stylesheet" href="styles/computer/gui.css" type="text/css" />
-    <script src="js/script.js" type="text/javascript"></script>
+    <!-- <script src="js/script.js" type="text/javascript"></script> -->
     <script src="js/functions.js" type="text/javascript"></script>
+    <script src="js/bib.js" type="text/javascript"></script>
+    <script src="js/bib-script.js" type="text/javascript"></script>
 
+   <script>
+        // var xhttps = new XMLHttpRequest();
+        
+    </script>
+    <style>
+        body {
+            background-color: #000;
+            color: var(--red-fg);
+        }
+    </style>
 </head>
-<body class="terminal" data-color="red">
-    <h1> Testing</h1>
-    <div class="search-box">
 
-        <div id="results">
+<body class="terminal" style="color: var(--red-fg);">
 
-        </div>
+    <h1>Testing</h1>
+    <div id="search-box">
+        <!-- <button id="addBk" onclick="add_books()">Add Books</button> -->
+        <form id="bib-form">
+            <table>
+                <tr>
+                    <td> <label for="book">Select book:</label></td>
+                    <td> <select id="book">
+                            <!-- <option id="select" value="NULL">SELECT A BOOK</option> -->
+                        </select>
+                    </td>
+                    <td>
+                        <button id="search-btn">[→]</button>
+                    </td>
+                </tr>
+    
+                <tr>
+                    <td></td>
+                    <td>   </td>
+                </tr>
+            </table>
+            <input type="hidden" id="_book" value="">
+            <input type="hidden" id="chap" value="">
+            <!-- <input type="hidden"  -->
+        </form>
+        
+        <fieldset>
+
+        </fieldset>
+
+        <!-- <input type="text" id="im" /> -->
+        
+       
     </div>
+
+    <div id="results">
+
+        <ol id="verses">
+            <li id="_"></li>
+        </ol>
+    </div>
+
 </body>
+
 </html>

@@ -1,17 +1,29 @@
-/* Error: Undefined mixin.
- *   ,
- * 6 |             @include colors;
- *   |             ^^^^^^^^^^^^^^^
- *   '
- *   gui.scss 6:13  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Undefined mixin.\a   \2577 \a 6 \2502              @include colors;\d\a   \2502              ^^^^^^^^^^^^^^^\a   \2575 \a   gui.scss 6:13  root stylesheet";
+@import url("./style.css");
+.terminal #content iframe {
+  background-color: var(--bg);
+  color: var(--color);
+  border-color: var(--border-color);
+  min-width: 100px;
+  min-height: 100px;
+  width: calc(100% - 50px);
+  height: 500px;
 }
+.terminal #content iframe * {
+  background-color: var(--bg);
+  color: var(--color);
+  border-color: var(--border-color);
+}
+.terminal #content iframe #document {
+  height: 100%;
+}
+.terminal #content #search-box {
+  display: block;
+  padding: 5px;
+}
+.terminal #content #search-box button {
+  background-color: var(--bg);
+  color: var(--color);
+  border-color: var(--border-color);
+}
+
+/*# sourceMappingURL=gui.css.map */

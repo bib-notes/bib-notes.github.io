@@ -2,7 +2,7 @@
 @use "sass:math";
 @use 'sass:color';
 @import url('animations.css');
-
+// @use "mixins";
 // @use
 // @use "functions";
 @font-face {
@@ -298,8 +298,9 @@ body.terminal {
         background-color: $bg;
         color: $color;
         overflow-y: hidden;
-        animation: shadow 3s infinite, box-shadow 3s infinite;
-
+        animation: shadow 3s infinite, box-shadow 3s infinite,  text-flicker 0.01s infinite;
+        ;
+        
         #container {
             @include full;
         }
@@ -319,7 +320,9 @@ body.terminal {
         position: absolute;
         top: 0;
         left: 0;
+        background-color: var(--bg);
         background: radial-gradient(ellipse, transparent, rgba(0, 0, 0, 0.5)90%);
+
     }
 
     #content {
@@ -327,7 +330,6 @@ body.terminal {
         font-family: AcerVga8_2y, var(--text-font);
         font-size: 16px;
         overflow-y: auto;
-        animation: text-flicker 0.01s infinite;
     }
 
     #footer {
@@ -365,7 +367,7 @@ body.terminal {
 }
 
 #crt {
-
+    background-image:  radial-gradient(ellipse, transparent, rgba(0, 0, 0, 0.5)90%);
     #nav-strip {
         height: 20px;
         // width: 100%;
@@ -572,7 +574,8 @@ body.terminal {
 }
 
 #content {
-    animation: text-flicker 0.01s infinite;
+    // animation: text-flicker 0.01s infinite;
+    overflow-y: auto;
 
     *:is(h1, h2, h3, h4, h5, h6) {
         font-family: IBM_BIOS_2y, var(--text-font);
@@ -753,5 +756,6 @@ body.terminal {
     select {
         @include colors;
         min-width: 20px;
+
     }
 }

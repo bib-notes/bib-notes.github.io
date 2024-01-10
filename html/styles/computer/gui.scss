@@ -1,20 +1,35 @@
+@charset "UTF-8";
 @import url("./style.css");
+// @use "style";
+// @use "mixins/lib";
+$color: var(--color);
+$bg: var(--bg);
+$border: var(--border-color);
 
+@mixin colors {
+    background-color: $bg;
+    color: $color;
+    border-color: $border;
+}
 .terminal {
     #content {
         iframe {
             @include colors;
             min-width: 100px;
             min-height: 100px;
-
+            width: calc(100% - 50px);
+            height: 500px;
             * {
+                @include colors;
+            }
+            #document{
+                height: 100%;
             }
         }
 
         #search-box {
             display: block;
             padding: 5px;
-
             button {
                 @include colors;
             }

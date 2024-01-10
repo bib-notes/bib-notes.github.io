@@ -13,7 +13,9 @@
 html {
     font-size: 14px;
 }
-
+body{
+    overflow-y: auto;
+}
 table {
     border: 0;
     border-collapse: collapse;
