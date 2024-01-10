@@ -92,6 +92,10 @@
     50%{background-position: 0px 200px;}
     // 100%{background-position: 0px 100px;}
 }
+@keyframes typeout{
+  0%{width:0;}
+  100%{width: 100%;}
+}
 // @keyframes flicker{
 //     0% {
 //         opacity: 0.78;

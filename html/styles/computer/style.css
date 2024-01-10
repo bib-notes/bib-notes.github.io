@@ -111,6 +111,10 @@
   --border-color: var(--blue-fg);
 }
 
+.typewriter::after {
+  content: var(--caret);
+}
+
 body.terminal {
   background-color: var(--main-bg);
   color: var(--main-fg);
@@ -244,6 +248,7 @@ body.terminal {
   border: 2px solid var(--color);
   background-color: transparent;
   position: fixed;
+  z-index: 1;
 }
 .terminal #screen {
   width: 100%;
@@ -375,6 +380,11 @@ body.terminal {
   float: left;
   color: inherit;
   margin: 10px 0;
+  border-left: 2px solid var(--color);
+  border-bottom: 2px solid var(--color);
+  position: absolute;
+  z-index: 1;
+  font-family: Rainbow100, var(--text-font);
 }
 #top #nav-toggle {
   width: 40px;
@@ -500,7 +510,7 @@ body.terminal {
   overflow-y: auto;
 }
 #content *:is(h1, h2, h3, h4, h5, h6) {
-  font-family: IBM_BIOS_2y, var(--text-font);
+  font-family: Nix8x8, var(--text-font);
   margin-bottom: 10px;
   width: 500px;
   font-size: inherit;
@@ -563,7 +573,7 @@ body.terminal {
 }
 #content section {
   width: 100%;
-  height: max-content;
+  height: 450px;
   overflow-y: auto;
   padding-left: 10px;
 }

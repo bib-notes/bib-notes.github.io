@@ -152,6 +152,10 @@ $border: var(--border-color);
     height: 100%;
 }
 
+.typewriter{
+    &::after{content: var(--caret);}
+    
+}
 body.terminal {
     background-color: var(--main-bg);
     color: var(--main-fg);
@@ -291,6 +295,7 @@ body.terminal {
         border: 2px solid $color;
         background-color: transparent;
         position: fixed;
+        z-index: 1;
     }
 
     #screen {
@@ -335,6 +340,8 @@ body.terminal {
         text-decoration: none;
         font-style: normal;
         width: 100%;
+        bottom: 0;
+        border: 1px solid $color;
     }
 }
 
@@ -428,6 +435,11 @@ body.terminal {
         float: left;
         color: inherit;
         margin: 10px 0;
+        border-left: 2px solid $color;
+        border-bottom: 2px solid $color;
+        position: absolute;
+        z-index: 1;
+        font-family: Rainbow100, var(--text-font);
     }
 
     #nav-toggle {
@@ -579,7 +591,7 @@ body.terminal {
     overflow-y: auto;
 
     *:is(h1, h2, h3, h4, h5, h6) {
-        font-family: IBM_BIOS_2y, var(--text-font);
+        font-family: Nix8x8, var(--text-font);
         margin-bottom: 10px;
         width: 500px;
         font-size: inherit;
@@ -659,10 +671,10 @@ body.terminal {
 
     section {
         width: 100%;
-        height: max-content;
+        height: 450px;
         overflow-y: auto;
         padding-left: 10px;
-        // overflow-y: auto;
+
     }
 
     table {
