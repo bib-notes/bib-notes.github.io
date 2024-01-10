@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="content-type" content="application/html" />
+    <meta name="description" content="bib notes" />
+    <meta name="keywords" content="terminal " />
+    <meta name="author" content="E" />
+    <title>search</title>
+    <link rel="icon" href="img/favicon.ico" sizes="16x16" />
+    <link rel="stylesheet" href="styles/reset.css" type="text/css" />
+    <link rel="stylesheet" href="styles/computer/style.css" type="text/css" />
+    <link rel="stylesheet" href="styles/computer/gui.css" type="text/css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/script.js" type="text/javascript"></script>
+    <script src="js/functions.js" type="text/javascript"></script>
+
+</head>
+<body class="terminal">
+    <div id="screen" data-color="red">
+        <header id="logo">
+            <h1>b1b-n07e$</h1>
+        </header>
+        <div id="crt">
+            <div id="scanline"></div>
+
+            <div id="container">
+                <nav id="nav-strip">
+                    <a href="#">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="#">Forms</a>
+                    <a href="#">Forum</a>
+                    <a href="#">Test</a>
+                </nav>
+                <!--For displaying Section current Section-->
+                <!-- <div id="nav-box">
+                    <button id="prev"><-</button>
+
+                    <button id="next">-></button>
+
+                </div> -->
+                <button class="nav-btn" id="nav-toggle">
+                    <img src="img/menu.png" width="16" height="16" />
+                </button>
+                <aside id="nav-list" data-toggle="on">
+                    <h2>Go To </h2>
+                    <hr />
+                    <nav id="sec-list">
+                        <button class="sec-btn" data-link="home" data-active>_home</button>
+                        <button class="sec-btn" data-link="bib">_bib</button>
+                        <button class="sec-btn" data-link="links">_links</button>
+                        <button class="sec-btn" data-link="apps">apps</button>
+
+                    </nav>
+                </aside>
+                <main id="content">
+
+                    <h1 class="title">Home</h1>
+                    <hr />
+                    <section id="home" data-toggle="on">
+                        <h1 class="title">Bib Notes</h1>
+
+                        <blockquote>
+                            This Website is for [REDACTED] Purposes.
+                        </blockquote>
+
+                        <!--<p>This is where you can review [REDACTED]</p>-->
+                        <iframe id="bib-frame" title="bib" src="bib.html"    
+                         width="500" height="300"
+                         referrerpolicy="origin">
+                            <p> Iframe Not Supported by Browser.</p>
+                        </iframe>
+                        <!-- <iframe id="test" title="test"
+                                src="https://www.w3schools.com/tags/tag_iframe.asp"
+                                referrerpolicy="origin"></iframe> -->
+                    </section>
+                    <section id="bib" data-toggle="off">
+                        <h1 class="title">bib</h1>
+
+                        <details>
+                            <summary>Summary Box</summary>
+                            <p>
+                                This is a summary Box. This is where I can plase large
+                                portions of text into.
+                            </p>
+                            <!--<form>
+                                <fieldset>
+                                    <legend>Form</legend>
+                                    <label for="input1">input text:</label>
+                                    <input type="text" id="input1" />
+                                    <input type="button" value="wheat_flour" title="button"  />
+                                </fieldset>
+
+                            </form>-->
+                        </details>
+
+                    </section>
+                    <section id="links" data-toggle="off">
+                        <h2>Links</h2>
+                        <progress max="10" value="5"></progress>
+                        <h4>Coding</h4>
+                        <ul>
+                            <li> <a href="https://www.w3schools.com/">w3schools</a></li>
+                        </ul>
+                        <h4>Other</h4>
+                        <ul>
+                            <li><a href="https://444prophecynews.com/">444</a></li>
+                            <li><a href="https://aruljohn.com/Bible/">_bb</a></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </section>
+                    <section id="test3" data-toggle="off">
+                        <h2>Test 3</h2>
+
+                        <p>This is Test 1 Section</p>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Column 1</th>
+                                    <th>Column 2</th>
+                                    <th>Column 3</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>ABC</td>
+                                    <td>123</td>
+                                    <td>@#$</td>
+                                </tr>
+                                <tr>
+                                    <td>ABC</td>
+                                    <td>123</td>
+                                    <td>@#$</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </section>
+
+                </main>
+            </div>
+        </div>
+
+        <!-- <div id="scroll"></div> -->
+        <footer>
+        </footer>
+    </div>
+</body>
+</html>
