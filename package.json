@@ -1,0 +1,18 @@
+{
+    "name": "bib-notes.github.io",
+    "description": "github page",
+    "version": "1.0.0",
+    "keywords": [
+        "util",
+        "functional",
+        "server",
+        "client",
+        "browser"
+    ],
+    "author": "em-d3v",
+    "contributors": [],
+    "dependencies": {
+        "async": "^3.2.4",
+        "jquery": "^3.7.0"
+    }
+}
