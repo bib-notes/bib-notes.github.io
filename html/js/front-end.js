@@ -23,12 +23,11 @@ function load_secList() {
 
         if (sect.getAttribute("data-toggle") === "on") {
             btn.setAttribute("data-active","");
-        }
-      
-
+        } 
         btn.innerHTML = text;
+        btn.setAttribute("onclick", "changeSection('" + link + "');");
         list.appendChild(btn);
-        console.log(i);
+//        console.log(i);
     }
 
 }
