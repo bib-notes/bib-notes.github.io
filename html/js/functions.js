@@ -1,6 +1,6 @@
 const $id = function (id) {
     return document.getElementById(id);
-}
+};
 /**
  * 
  * @param {*} selector 
@@ -8,7 +8,7 @@ const $id = function (id) {
  */
 const $sel = function (selector) {
     return document.querySelector(selector);
-}
+};
 /**
  *  changes section
  * @param {string} id 

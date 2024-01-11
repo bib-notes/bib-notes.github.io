@@ -2,11 +2,19 @@
 function get_bible() {
 
 }
+/**
+ * 
+ * @returns {undefined}
+ */
 const search = () => {
     let selection = document.getElementById("bk_ver");
 //    let book = selection.value;
 //   alert("Selected "+book);
 };
+/**
+ * 
+ * @returns {undefined}
+ */
 const clear = () => {
     $id("bk_ver").value = null;
 };

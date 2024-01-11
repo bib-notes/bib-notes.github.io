@@ -16,7 +16,23 @@ const clear_frame = function (iframe = "") {
 const add = function (iframe = "", content) {
 
 }
-
+/**
+ * toggles audio
+ * @param {string} audio
+ * @returns {undefined}
+ */
+const toggle_audio=(audio)=>{
+    let x = "audio#"+audio;
+      let audio_list = document.getElementsByTagName("audio");
+   for (var i=0; i< audio_list.length;i++){
+       let a = audio_list[i];
+       if (a.id === audio){
+           //check if audio is playing.
+       }else{
+           // if audio is playing, turn it off.
+       }
+   }
+};
 const gui = {
     clear_iframe: function (id = "") {
         if (id === "") {
