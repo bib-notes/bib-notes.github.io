@@ -411,9 +411,12 @@ body.terminal {
             color: $bg;
             border: 1px solid $bg;
         }
+        &:disabled{
+            text-decoration: line-through;
+        }
         // #nav-toggle
     }
-
+  
 }
 
 #glitch {

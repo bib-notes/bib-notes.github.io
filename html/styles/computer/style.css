@@ -354,6 +354,9 @@ body.terminal {
   color: var(--bg);
   border: 1px solid var(--bg);
 }
+.terminal button:disabled {
+  text-decoration: line-through;
+}
 
 #glitch {
   animation: shadow 3s linear infinite;
