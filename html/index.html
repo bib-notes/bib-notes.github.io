@@ -15,34 +15,33 @@
     <link rel="stylesheet" href="styles/computer/style.css" type="text/css" />
     <link rel="stylesheet" href="styles/computer/gui.css" type="text/css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.1.1/howler.min.js"></script>
     <script src="js/script.js" type="text/javascript"></script>
     <script src="js/functions.js" type="text/javascript"></script>
     <script src="js/front-end.js" type="text/javascript"></script>
-    
 </head>
 
 <body class="terminal">
     <div id="screen" data-color="blue">
-
         <div id="crt">
             <div id="scanline"></div>
-
             <div id="container">
-                <header id="logo">
-                    <h1>b1b-n07e$</h1>
+                <header id="top">
+                    <header id="logo">
+                        <h1>B1b-n07e$</h1>
+                    </header>
+                    <nav id="nav-strip">
+                        <a href="index.html" title="home">H0m3</a>
+                        <a href="about.html">About</a>
+                    </nav>
+                    <button class="nav-btn" id="nav-toggle">
+                        <img src="img/menu.png" width="16" height="16" />
+                    </button>
                 </header>
-                <nav id="nav-strip">
-                    <a href="index.html">Home</a>
-                    <a href="about.html">About</a>
-                </nav>
-
-                <button class="nav-btn" id="nav-toggle">
-                    <img src="img/menu.png" width="16" height="16" />
-                </button>
                 <aside id="nav-list" data-toggle="on">
                     <h2>Go To </h2>
                     <hr />
-                    <nav id="sec-list"> </nav>
+                    <nav id="sec-list"></nav>
                 </aside>
                 <main id="content">
                     <h1 id="title"></h1>
@@ -51,12 +50,18 @@
                         <p>
                             Welcome to bib-notes. This is where you can find [REDACTED].
                             There may be some translations, available. navigate to _bib to find them. <br>
-                        The <strong>_links</strong> section contains links to other websites. <br>
-                        To navigate to these sections, click on the menu (the button with 3 bars) in the top right corner.
-                        Then click on the section.                        
-                        Warning: The applications may take a bit to load as some of the data files
-                        are large
-                        so please be patient. Thank you :).                        
+                            The <strong>_links</strong> section contains links to other websites. <br>
+                            To navigate to these sections, click on the menu (the button with 3 bars) in the top right
+                            corner.
+                            Then click on the section.
+                            Warning: The applications may take a bit to load as some of the data files
+                            are large
+                            so please be patient. Thank you :).
+                            <button class="audio-btn" data-audio="welcome">Welcome.mp3[>]</button>
+                            <audio id="welcome">
+                                <source src="audio/welcome.mp3" type="audio/mpeg">
+                                Audio Tag Not Supported
+                            </audio>
                         </p>
                     </section>
                     <section class="main-section" id="bib" data-toggle="off">
@@ -101,13 +106,13 @@
                     <section class="main-section" id="test" data-toggle="off">
                         <h2>Test</h2>
                         The app below just shows the other forms/pages that you can mess with.
-                        <object data="/x/index.html" style="width: 100%; height: 500px;"></object>
+                        <object id="test-web" data="/x/index.html" style="width: 100%; height: 500px;"></object>
                     </section>
                     <section class="main-section" id="bin" data-toggle="off">
                         <h1>_bin</h1>
                         <button title="Generate Message" id="gen-msg"></button>
                         <code>
-                                01001010 01100101 01110011 01110101 01110011 00100000 01101001 01110011 00100000 01110100 01101000 01100101 00100000 01110111 01100001 01111001 00100000 01110100 01101000 01100101 00100000 01110100 01110010 01110101 01110100 01101000 00101100 00100000 01100001 01101110 01100100 00100000 01110100 01101000 01100101 00100000 01101100 01101001 01100110 01100101 00101110 00001010 01001010 01100101 01110011 01110101 01110011 00100000 01110000 01100001 01101001 01100100 00100000 01110100 01101000 01100101 00100000 01110000 01110010 01101001 01100011 01100101 00100000 01100110 01101111 01110010 00100000 01101111 01110101 01110010 00100000 01110011 01101001 01101110 01110011 00101100 00100000 01110011 01101111 00100000 01110100 01101000 01100001 01110100 00100000 01110111 01100101 00100000 01100011 01100001 01101110 00100000 01101000 01100001 01110110 01100101 00100000 01100101 01110100 01100101 01110010 01101110 01100001 01101100 00100000 01101100 01101001 01100110 01100101 00100000 01101001 01101110 00100000 01000111 01101111 01100100 00101110 00001010 01001000 01100101 00100000 01101001 01110011 00100000 01110100 01101000 01100101 00100000 01101110 01100001 01110010 01110010 01101111 01110111 00100000 01100100 01101111 01101111 01110010 00101110 00001010 01000001 01101110 01100100 00100000 01001010 01100101 01110011 01110101 01110011 00100000 01101001 01110011 00100000 01110100 01101000 01100101 00100000 01101111 01101110 01101100 01111001 00100000 01110111 01100001 01111001 00101110 00100000 00001010 01010011 01110101 01110010 01110010 01100101 01101110 01100100 01100101 01110010 00100000 01110100 01101111 00100000 01001000 01101001 01101101 00100000 01101110 01101111 01110111 00100000 01100010 01100101 01100110 01101111 01110010 01100101 00100000 01101001 01110100 00100111 01110011 00100000 01110100 01101111 01101111 00100000 01101100 01100001 01110100 01100101 00101110
+                                                01001010 01100101 01110011 01110101 01110011 00100000 01101001 01110011 00100000 01110100 01101000 01100101 00100000 01110111 01100001 01111001 00100000 01110100 01101000 01100101 00100000 01110100 01110010 01110101 01110100 01101000 00101100 00100000 01100001 01101110 01100100 00100000 01110100 01101000 01100101 00100000 01101100 01101001 01100110 01100101 00101110 00001010 01001010 01100101 01110011 01110101 01110011 00100000 01110000 01100001 01101001 01100100 00100000 01110100 01101000 01100101 00100000 01110000 01110010 01101001 01100011 01100101 00100000 01100110 01101111 01110010 00100000 01101111 01110101 01110010 00100000 01110011 01101001 01101110 01110011 00101100 00100000 01110011 01101111 00100000 01110100 01101000 01100001 01110100 00100000 01110111 01100101 00100000 01100011 01100001 01101110 00100000 01101000 01100001 01110110 01100101 00100000 01100101 01110100 01100101 01110010 01101110 01100001 01101100 00100000 01101100 01101001 01100110 01100101 00100000 01101001 01101110 00100000 01000111 01101111 01100100 00101110 00001010 01001000 01100101 00100000 01101001 01110011 00100000 01110100 01101000 01100101 00100000 01101110 01100001 01110010 01110010 01101111 01110111 00100000 01100100 01101111 01101111 01110010 00101110 00001010 01000001 01101110 01100100 00100000 01001010 01100101 01110011 01110101 01110011 00100000 01101001 01110011 00100000 01110100 01101000 01100101 00100000 01101111 01101110 01101100 01111001 00100000 01110111 01100001 01111001 00101110 00100000 00001010 01010011 01110101 01110010 01110010 01100101 01101110 01100100 01100101 01110010 00100000 01110100 01101111 00100000 01001000 01101001 01101101 00100000 01101110 01101111 01110111 00100000 01100010 01100101 01100110 01101111 01110010 01100101 00100000 01101001 01110100 00100111 01110011 00100000 01110100 01101111 01101111 00100000 01101100 01100001 01110100 01100101 00101110
                         </code>
                     </section>
                 </main>
