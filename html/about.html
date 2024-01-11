@@ -1,183 +1,95 @@
 <!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
 
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
-<head>
-    <meta charset="utf-8" />
-    <meta http-equiv="content-type" content="application/html" />
+        <title>@bou7</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="img/favicon.ico" sizes="16x16" />
+        <link rel="stylesheet" href="styles/reset.css" type="text/css" />
+        <link rel="stylesheet" href="styles/computer/style.css" type="text/css" />
+        <link rel="stylesheet" href="styles/computer/gui.css" type="text/css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="js/script.js" type="text/javascript"></script>
+        <script src="js/functions.js" type="text/javascript"></script>
+        <script src="js/front-end.js" type="text/javascript"></script>
 
-    <title>bib-notes</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <link rel="stylesheet" href="styles/reset.css" type="text/css" />
-    <link rel="stylesheet" href="styles/computer/style.css" type="text/css" />
-    <script src="js/script.js" type="text/javascript"></script>
-    <script src="js/functions.js" type="text/javascript"></script>
+    </head>
+    <body class="terminal">
+        <div id="screen" data-color="blue">
+            <div id="crt">
+                <div id="scanline"></div>
+                <div id="container">
+                    <header id="top">
+                        <header id="logo">
+                            <h1>B1b-n07e$</h1>
+                        </header>
+                        <nav id="nav-strip">
+                            <a href="index.html">H0me</a>
+                            <a href="about.html">@b0u7</a>
+                            <a href="search.html">B1b-$3@rCH</a>
+                            <a href="blog.html">B10g</a>
+                        </nav>
+                        <button class="nav-btn" id="nav-toggle">
+                            <img src="img/menu.png" width="16" height="16" />
+                        </button>
+                    </header>
+                    <aside  id="nav-list" data-toggle="on">
+                        <h2>Go To </h2>
+                        <hr />
+                        <nav id="sec-list">
+                            <!--<button class="sec-btn" data-link="home" data-active>_home</button>-->
+                            <!--<button class="sec-btn" data-link="section1">_sec_1</button>-->
 
-</head>
-<body class="terminal">
-    <div id="screen" data-color="blue">
-        
-        <div id="crt">
-            <div id="scanline"></div>
+                        </nav>
+                    </aside>
+                    <!-- MAIN CONTENT HERE -->
+                    <main id="content">
+                        <h1 id="title"></h1>
+                        <hr />
+                        <!-- SECTIONS -->
+                        <section class="main-section" id="home" data-toggle="on">
+                            <h2>ME</h2>
+                            <article>
+                                <p>I like to do programming, designing websites, and learning.
+                                    And I love to talk about Jesus, and the Bible.
 
-            <div id="container">
-                <header id="logo">
-                    <h1>b1b-n07e$</h1>
-                </header>
-                <nav id="nav-strip">
-                    <a href="index.html">Home</a>
-                    <a href="about.html">About</a>
-                    <!-- <a href="#">Forms</a>
-                    <a href="#">Forum</a>
-                    <a href="#">Test</a> -->
-                </nav>
-                <!--For displaying Section current Section-->
-                <!-- <div id="nav-box">
-                    <button id="prev"><-</button>
+                                    So I decided to mash these things together to make this.
+                                    I wanted to make a webpage that can provide scripture using javascript.
+                                    <br>
+                                    I like the style that I went for is an old computer type style.
+                                    I chose old bios type fonts (along with monospace, courier new, and Courier.)
 
-                    <button id="next">-></button>
+                                </p>
+                            </article>
+                        </section>
+                        <section class="main-section" id="sect2" data-toggle="off">
+                            <h2>section2</h2>
+                            <article>
 
-                </div> -->
-                <button class="nav-btn" id="nav-toggle">
-                    <img src="img/menu.png" width="16" height="16" />
-                </button>
-                <aside id="nav-list" data-toggle="on">
-                    <h2>Go To </h2>
-                    <hr />
-                    <nav id="sec-list">
-                        <button class="sec-btn" data-link="home" data-active>_me</button>
-                        <button class="sec-btn" data-link="test">_web</button>
-                        <button class="sec-btn" data-link="test"></button>
-                        <button class="sec-btn" data-link="apps">apps</button>
+                            </article>
+                        </section>
+                        <section class="main-section" id="sec3" data-toggle="off">
+                            <h2>section 3</h2>
+                            <article>
 
-                    </nav>
-                </aside>
-                <main id="content">
-
-                    <h1 class="title">About</h1>
-                    <hr />
-                    <section id="home" data-toggle="on">
-                        <h1 class="title">Me</h1>
-                        <p>I like to do programming, designing websites, and learning.
-                             And I love to talk about Jesus, and the Bible.
-
-                            So I decided to mash these things together to make this.
-                            I wanted to make a webpage that can provide scripture using javascript.
-
-                            I like the style that I went for is an old computer type style.
-                            I chose old bios type fonts (along with monospace, courier new, and Courier.)
-                            
-                        </p>
-                        <blockquote>
-                            <p>Friendship with the world is emnity with God.</p>
-                        </blockquote>
-                        <!-- <form>
-                            <input type="text" width="25">
-                            <input type="tel" width="25">
-                            <input type="search" width="25">
-                            <input type="" width="25">
-                            <input type="text" width="25">
-                            <input type="text" width="25">
-                        </form> -->
-                        <!-- <p id="glitch">
-                            This is a glitch paragraph
-                            <blockquote>
-                                block quote
-                            </blockquote>
-                        </p> -->
-                    </section>
-                    <section id="test" data-toggle="off">
-                        <h1 class="title">Template</h1>
-                        <p>This is Test 1 Section</p>
-                        <blockquote>
-                            <p>This is a blockquote.</p>
-                        </blockquote>
-                        <ul>
-                            <li>List Item</li>
-                            <li>List Item</li>
-                            <li>List Item</li>
-                            <li>List Item</li>
-                            <li>List Item</li>
-                        </ul>
-                        <code>
-                            out.print("Hello World");
-                        </code>
-                        <details>
-                            <summary>Summary Box</summary>
-                            <p>
-                                This is a summary Box. This is where I can plase large
-                                portions of text into.
-                            </p>
-                            <!--<form>
-                                <fieldset>
-                                    <legend>Form</legend>
-                                    <label for="input1">input text:</label>
-                                    <input type="text" id="input1" />
-                                    <input type="button" value="wheat_flour" title="button"  />
-                                </fieldset>
-
-                            </form>-->
-                        </details>
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th>Column 1</th>
-                                    <th>Column 2</th>
-                                    <th>Column 3</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>ABC</td>
-                                    <td>123</td>
-                                    <td>@#$</td>
-                                </tr>
-                                <tr>
-                                    <td>ABC</td>
-                                    <td>123</td>
-                                    <td>@#$</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </section>
-                    <section id="test2" data-toggle="off">
-                        <h2>Test 2</h2>
-                        <progress max="10" value="5"></progress>
-                        <p>This is Test 2 Section</p>
-                    </section>
-                    <section id="test3" data-toggle="off">
-                        <h2>Test 3</h2>
-
-                        <p>This is Test 1 Section</p>
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th>Column 1</th>
-                                    <th>Column 2</th>
-                                    <th>Column 3</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>ABC</td>
-                                    <td>123</td>
-                                    <td>@#$</td>
-                                </tr>
-                                <tr>
-                                    <td>ABC</td>
-                                    <td>123</td>
-                                    <td>@#$</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </section>
-                    <section id="about" data-toggle="off">
-                    </section>
-                </main>
+                            </article>
+                        </section>
+                    </main>
+                    <footer>
+                        change color: 
+                        <button class="change-color"   value="red" >Red</button>
+                        <button class="change-color"   value="green" >Green</button>
+                        <button class="change-color"   value="blue" >Blue</button>
+                    </footer>
+                </div>
             </div>
         </div>
 
-        <!-- <div id="scroll"></div> -->
-
-    </div>
-</body>
+    </body>
 </html>

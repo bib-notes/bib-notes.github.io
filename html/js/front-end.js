@@ -10,11 +10,11 @@ function load_secList() {
     var btn = null;
     var sect = null, link = "";//for name
     var text = "";
-    console.log(sects);
+//    console.log(sects);
     for (i = 0; i < sects.length; i++) {
         btn = document.createElement("button");
         sect = sects[i];
-        console.log(sect);
+//        console.log(sect);
         link = sect.id;
         text = "_" + link;
         // btn.class = "sec-btn";
