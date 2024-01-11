@@ -27,31 +27,38 @@ and open the template in the editor.
                 margin: 0;
                 position: relative;
             }
+            object{
+                width: 100%;
+                height: 100%;
+            }
         </style>
     </head>
 
     <body class="terminal" data-color="black">
         <main id="content">
             <form id="bib-form">
-                <label>Version: </label>
-                <select id="bk_ver">
-                    <option value="kjv">King James Version</option>
-                    <option value="heb">Hebrew</option>
-                    <option value="gre">Greek</option>
-                    <option value="niv">New International Version</option>
-                </select>
+               
+                
                 <table>
+                    
+                    <tr>
+                        <td> <label>Version: </label></td>
+                        <td><select id="bk_ver">
+                            <option value="kjv">King James Version</option>
+                            <option value="heb">Hebrew</option>
+                            <!--<option value="gre">Greek</option>-->
+                            <!--<option value="niv">New International Version</option>-->
+                        </select> </td>
+                        <td><button id="bks">[→]</button></td>
+                    </tr>
                     <tr>
 
                         <td> <label for="book">Select book:</label></td>
-
                         <td> <select id="book">
                                 <!-- <option id="select" value="NULL">SELECT A BOOK</option> -->
                             </select>
                         </td>
-                        <td>
-                            <button id="search-btn">[→]</button>
-                        </td>
+                        <td> <button id="search-btn">[→]</button></td>
                     </tr>
 
                     <tr>
@@ -64,7 +71,7 @@ and open the template in the editor.
                 <!-- <input type="hidden"  -->
             </form>
             <div id="results">
-
+                <object data="xml/kjv.xml"></object>
             </div>
         </main>
 

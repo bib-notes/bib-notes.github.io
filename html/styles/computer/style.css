@@ -612,6 +612,9 @@ body.terminal {
 #content summary::marker {
   content: var(--start-2);
 }
+#content summary:hover {
+  cursor: pointer;
+}
 #content .progress {
   border: var(--color);
   background-color: var(--bg);

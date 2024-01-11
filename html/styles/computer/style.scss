@@ -708,6 +708,7 @@ body.terminal {
     }
 
     details {
+        
         &[open] {
 
         }
@@ -722,6 +723,7 @@ body.terminal {
         }
 
         &:hover {
+        cursor: pointer;
         }
     }
 
