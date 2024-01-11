@@ -37,17 +37,18 @@ and open the template in the editor.
 
     <body class="terminal" data-color="black">
         <main id="content">
+            <div>
+                
+            </div>
             <form id="bib-form">  
                 <table>
                     <tr>
                         <td>
-                            <select name="book" id="bk_ver" title="book version">
+                            <select name="version" id="ver" title="book version">
                                 <option value="null">Select a Version</option>
                                 <option value="kjv">KJV</option>
                                 <option value="heb">HEB</option>
-
-                                <!--<option value="gre">Greek</option>-->
-                                <!--<option value="niv">New International Version</option>-->
+                                <option value="ext">Extra</option>
                             </select>
                         </td>
                         <td></td>
@@ -68,7 +69,8 @@ and open the template in the editor.
                 </table>
                 
                 <input type="hidden" id="_book" value="">
-                <input type="hidden" id="chap" value="">
+                <input type="hidden" id="_chapter" value="">
+                <input type="hidden" id="_version" value="">
                 <!-- <input type="hidden"  -->
             </form>
             <div id="results">
