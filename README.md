@@ -19,8 +19,8 @@
 | Special Elite Regular | [Astigmatic](https://fonts.google.com/specimen/Special+Elite/about?query=special)
 - Styles:
   - Static Effect: [SMPTE Color Bars](https://codepen.io/joeyhoer/pen/AaOBdr)
+  - database: https://github.com/scrollmapper/bible_databases_deuterocanonical
   - 
-
 
 [^1]: [Open Font License](https://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL)
 [^2]: [Apache License 2.0](http://www.apache.org/licenses/LICENSE-2.0.html)
