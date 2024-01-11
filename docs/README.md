@@ -1,0 +1,26 @@
+# documentation
+
+- Front End:
+  - html
+  - javascript
+  - scss (compiled into css)
+  - 
+- software:
+    -   vscode/visual studio
+    -   netbeans (1.8)
+    -   github/gitbash (desktop): for pushing project to github
+    -   ruby
+- purpose:
+    - providing users with scriptures
+    - 
+- style
+  - old computer type style
+    - with lines on the screen and flickering.
+  - fonts: Nix8x8, Rainbow100, courier new, Acer VGA8-2y, VT323
+  - 
+- bibles:
+  - KJV
+  - English Standard version
+  - 
+  - Hebrew
+  -  Greek
