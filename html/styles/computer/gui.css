@@ -25,5 +25,10 @@
   color: var(--color);
   border-color: var(--border-color);
 }
+.terminal #content #bib-page {
+  margin: 0px 5px;
+  width: calc(100% - 10px);
+  height: 500px;
+}
 
 /*# sourceMappingURL=gui.css.map */
