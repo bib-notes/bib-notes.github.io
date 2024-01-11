@@ -25,6 +25,8 @@ const gui = {
             $id(id).innerHTML = "";
         }
     },
-    add: function ()
+    add: function (){
+        
+    }
 
-}
+};
