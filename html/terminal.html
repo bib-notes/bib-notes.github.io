@@ -3,80 +3,146 @@
 To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
 and open the template in the editor.
+https://cdnjs.cloudflare.com/ajax/libs/sql.js/1.9.0/sql-wasm.js
+https://cdnjs.cloudflare.com/ajax/libs/js-data/3.0.11/js-data.min.js
+https://cdnjs.cloudflare.com/ajax/libs/TypewriterJS/2.21.0/core.js
 -->
 <html>
-    <head>
 
-        <title>template</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="icon" href="img/favicon.ico" sizes="16x16" />
-        <link rel="stylesheet" href="styles/reset.css" type="text/css" />
-        <link rel="stylesheet" href="styles/computer/style.css" type="text/css" />
-        <link rel="stylesheet" href="styles/computer/gui.css" type="text/css" />
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-        <script src="js/script.js" type="text/javascript"></script>
-        <script src="js/functions.js" type="text/javascript"></script>
-        <script src="js/front-end.js" type="text/javascript"></script>
+<head>
 
-    </head>
-    <body class="terminal">
-        <div id="screen" data-color="blue">
-            <div id="crt">
-                <div id="scanline"></div>
-                <div id="container">
-                    <header id="top">
-                        <header id="logo">
-                            <h1>B1b-n07e$</h1>
-                        </header>
-                        <nav id="nav-strip">
-                            <a href="index.html">H0me</a>
-                            <a href="about.html">@b0u7</a>
-                            <a href="search.html">B1b-$3@rCH</a>
-                            <!--<a href="blog.html">B10g</a>-->                            
-                        </nav>
-                        <button class="nav-btn" id="nav-toggle">
-                            <img src="img/menu.png" width="16" height="16" />
-                        </button>
+    <title>t3rminal</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/favicon.ico" sizes="16x16" />
+    <link rel="stylesheet" href="styles/reset.css" type="text/css" />
+    <link rel="stylesheet" href="styles/computer/style.css" type="text/css" />
+    <link rel="stylesheet" href="styles/computer/gui.css" type="text/css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/listjs/2.3.1/list.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/TypewriterJS/2.21.0/core.min.js"></script> -->
+    <script src="https://unpkg.com/typewriter-effect@2.21.0/dist/core.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/async/3.2.5/async.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.terminal/2.37.2/css/jquery.terminal.css" type="text/javascript"></script> -->
+    <!-- <script src="https://unpkg.com/@nicesapien0/typewriter.js/typewriter.js"></script> -->
+    <script src="js/script.js" type="text/javascript"></script>
+    <script src="js/functions.js" type="text/javascript"></script>
+    <script src="js/front-end.js" type="text/javascript"></script>
+    <!-- <script src="js/lib/terminal/index.js" type="module"></script> -->
+    <script>
+//        var app = document.getElementById('app');
+        import Typewriter from 'typewriter-effect/dist/core';
+
+        var app = document.getElementById('app');
+
+        var typewriter = new Typewriter(app, {
+            loop: true,
+            delay: 75
+        });
+
+        typewriter
+            .pauseFor(2500)
+            .typeString('A simple yet powerful native javascript')
+            .pauseFor(300)
+            .deleteChars(10)
+            .typeString('<strong>JS</strong> plugin for a cool typewriter effect and ')
+            .typeString('<strong>only <span style="color: #27ae60;">5kb</span> Gzipped!</strong>')
+            .pauseFor(1000)
+            .start();
+        // var typewriter = new Typewriter(app, {
+        //     loop: true,
+        //     delay: 75,
+        // });
+
+        // typewriter
+        //     .pauseFor(2500)
+        //     .typeString('A simple yet powerful native javascript')
+        //     .pauseFor(300)
+        //     .deleteChars(10)
+        //     .typeString('<strong>JS</strong> plugin for a cool typewriter effect and ')
+        //     .typeString('<strong>only <span style="color: #27ae60;">5kb</span> Gzipped!</strong>')
+        //     .pauseFor(1000)
+        //     .start();
+
+    </script>
+    <script>
+    //    var typewriterConfig = ["Your Text", true]
+        // typewriter();
+        
+    </script>
+</head>
+
+<body class="terminal">
+    <div id="screen" data-color="blue">
+        <div id="crt">
+            <div id="scanline"></div>
+            <div id="container">
+                <header id="top">
+                    <header id="logo">
+                        <h1>B1b-n07e$</h1>
                     </header>
-                    <aside  id="nav-list" data-toggle="on">
-                        <h2>Go To </h2>
-                        <hr />
-                        <nav id="sec-list"></nav>
-                    </aside>
-                    <!-- MAIN CONTENT HERE -->
-                    <main id="content">
-                        <h1 id="title"></h1>
-                        <!--<hr />-->
-                        <!-- SECTIONS -->
-                        <section class="main-section" id="home" data-toggle="on">
-                            <h2>Home</h2>
-                            <article>
+                    <nav id="nav-strip">
+                        <a href="index.html" title="home">H0m3</a>
+                        <a href="about.html" title="about">@b0u7</a>
+                        <a href="terminal.html" title="terminal">7erm1n@l</a>
+                        <!--<a href="blog.html">B10g</a>-->
+                    </nav>
+                    <button class="nav-btn" id="nav-toggle">
+                        <img src="img/menu.png" width="16" height="16" />
+                    </button>
+                </header>
+                <aside id="nav-list" data-toggle="on">
+                    <h2>Go To </h2>
+                    <hr />
+                    <nav id="sec-list"></nav>
+                </aside>
+                <!-- MAIN CONTENT HERE -->
+                <main id="content">
+                    <h1 id="title"></h1>
+                    <!--<hr />-->
+                    <!-- SECTIONS -->
+                    <section class="main-section" id="home" data-toggle="on">
+                        <h2>_h0m3_</h2>
+                        <article>
+                            <p>This is a terminal webpage.
+                                This page is for testing purposes.
+                                Feel free to interact with some of the applications.
+                            </p>
+                            <div id="app">
 
-                            </article>
-                        </section>
-                        <section class="main-section" id="sect2" data-toggle="off">
-                            <h2>section2</h2>
+                            </div>
+                            <!-- <div class="window">
+                                    
+                                </div> -->
+                        </article>
+                        <article>
+                            <h3>XML</h3>
+                            <iframe src="./bin.html"></iframe>
+                        </article>
+                    </section>
+                    <!-- <section class="main-section" id="typewrite" data-toggle="off">
+                            <h2>typewriter</h2>
                             <article>
 
                             </article>
                         </section>
                         <section class="main-section" id="sec3" data-toggle="off">
-                            <h2>section 3</h2>
+                            <h2></h2>
                             <article>
 
                             </article>
-                        </section>
-                    </main>
-                    <footer>
-                        change color:
-                        <button class="change-color"   value="red" >Red</button>
-                        <button class="change-color"   value="green" >Green</button>
-                        <button class="change-color"   value="blue" >Blue</button>
-                    </footer>
-                </div>
+                        </section> -->
+                </main>
+                <footer>
+                    change color:
+                    <button class="change-color" value="red">Red</button>
+                    <button class="change-color" value="green">Green</button>
+                    <button class="change-color" value="blue">Blue</button>
+                </footer>
             </div>
         </div>
+    </div>
 
-    </body>
+</body>
+
 </html>

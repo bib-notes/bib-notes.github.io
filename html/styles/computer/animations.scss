@@ -64,13 +64,12 @@
     0%{opacity: 1;}
     50%{opacity: 0.75;}
 }
-@keyframes glow {
+// @keyframes glow {
     
-}
-@keyframes flicker {
-    $steps: 25;
-
-}
+// }
+// @keyframes flicker {
+//     $steps: 25;
+// }
 @keyframes glitch {
     $steps: 20;
     @for $i from 0 through $steps{
