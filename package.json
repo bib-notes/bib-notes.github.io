@@ -3,16 +3,16 @@
     "description": "github page",
     "version": "1.0.0",
     "keywords": [
-        "util",
-        "functional",
-        "server",
-        "client",
-        "browser"
+        "bible",
+        "bibles"
     ],
-    "author": "em-d3v",
+    "homepage": "https://github.com/bib-notes/bib-notes.github.io/",
+    "author": "bib-notes",
+    "directories": {
+        "doc": "./docs"
+    },
     "contributors": [],
     "dependencies": {
-        "async": "^3.2.4",
-        "jquery": "^3.7.0"
+        "typewriter-effect": "^2.21.0"
     }
 }

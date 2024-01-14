@@ -16,6 +16,8 @@
     <link rel="stylesheet" href="styles/computer/gui.css" type="text/css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.1.1/howler.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/TypewriterJS/2.21.0/core.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/TypewriterJS/2.21.0/core.min.js" integrity="sha512-fo6X5UXaTRf/mHuTYJBR3Q/rpPa+LB2KUyDMROluMkZnfEEF4DhQyI5AHRoAe/zzu1Ty58MMmZXG4SuVEpXsng==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
     <script src="js/script.js" type="text/javascript"></script>
     <script src="js/functions.js" type="text/javascript"></script>
     <script src="js/front-end.js" type="text/javascript"></script>
@@ -32,7 +34,9 @@
                     </header>
                     <nav id="nav-strip">
                         <a href="index.html" title="home">H0m3</a>
-                        <a href="about.html">About</a>
+                        <a href="about.html"title="about">@b0u7</a>
+                        <a href="terminal.html" title="terminal">7erm1n@l</a>
+                        <!--<a href="blog.html">B10g</a>-->                            
                     </nav>
                     <button class="nav-btn" id="nav-toggle">
                         <img src="img/menu.png" width="16" height="16" />
@@ -66,8 +70,20 @@
                     </section>
                     <section class="main-section" id="bib" data-toggle="off">
                         <h1 class="title">bib</h1>
-                        <p>Here is where the [REDACTED] can be found. Simply type into the form below. <br></p>
-                        <object id="bib-page" data="./bib/index.html"></object>
+                        <p>Here is where the [REDACTED] can be found (disclaimer: this page is still wip).
+                            <br>. interact with the form below.
+                        </p>
+                        <br>
+                        <div class="window" data-width="calc(100%-10px)" data-height="500px">
+                            <div class="top-bar">
+                                <div class="app-title">_bib.exe</div>
+                                <div class="btns"><button title="restart">R</button></div>
+                            </div>
+                            <div class="pane">
+                                <object id="bib-page" data="./bib/index.html"></object>
+                            </div>
+                        </div>
+                        
                     </section>
                     <section class="main-section" id="notes" data-toggle="off">
                         <details>
@@ -103,12 +119,13 @@
                             <li></li>
                         </ul>
                     </section>
-                    <section class="main-section" id="test" data-toggle="off">
+                    <!-- <section class="main-section" id="test" data-toggle="on">
                         <h2>Test</h2>
                         The app below just shows the other forms/pages that you can mess with.
                         <object id="test-web" data="/x/index.html" style="width: 100%; height: 500px;"></object>
-                    </section>
-                    <section class="main-section" id="bin" data-toggle="off">
+                        
+                    </section> -->
+                    <!-- <section class="main-section" id="bin" data-toggle="off">
                         <h1>_bin</h1>
                         <button title="Generate Message" id="gen-msg"> Generate</button>
                         <button title="Generate Message" id="clear-msg"> Generate</button>
@@ -116,7 +133,7 @@
                         <div id="typer">
 
                         </div>
-                    </section>
+                    </section> -->
                 </main>
             </div>
         </div>

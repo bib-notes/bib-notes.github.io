@@ -15,5 +15,5 @@ package java.main;
  */
 
 public class Book {
-//    private String name, ;
+    private String name, title, testament;
 }

@@ -1,4 +1,16 @@
 /**
+    * @description      : 
+    * @author           : eVmPr
+    * @group            : 
+    * @created          : 12/01/2024 - 16:07:25
+    * 
+    * MODIFICATION LOG
+    * - Version         : 1.0.0
+    * - Date            : 12/01/2024
+    * - Author          : eVmPr
+    * - Modification    : 
+**/
+/**
  * @file gui
  * @fileoverview contains gui functions
  *
@@ -28,6 +40,7 @@ const toggle_audio=(audio)=>{
        let a = audio_list[i];
        if (a.id === audio){
            //check if audio is playing.
+           a.play();
        }else{
            // if audio is playing, turn it off.
        }

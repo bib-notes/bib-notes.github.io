@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- <!DOCTYPE note [
+<!Element note(heading,body)>
+
+<!ELEMENT category (#PCDATA)>
+<!ELEMENT headng ANY>
+<!ELEMENT content (#PCDATA)>
+]> -->
+<!--
+
+-->
+<notes>
+    <note id="0" category="category">
+        <heading>Title</heading>
+        <content>content</content>
+    </note>
+</notes>
