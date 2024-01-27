@@ -220,7 +220,7 @@ body.terminal {
   width: 100%;
   padding-top: 5px;
   bottom: 0;
-  height: 35px;
+  height: 40px;
   border-top: 1px solid var(--color);
   position: fixed;
   background-color: var(--main-bg);
@@ -427,6 +427,11 @@ body.terminal {
 
 #content {
   overflow-y: auto;
+}
+#content article {
+  border-color: var(--border-color);
+  padding: 5px 2px;
+  border-top: 1px solid;
 }
 #content *:is(h1, h2, h3, h4, h5, h6) {
   font-family: Nix8x8, var(--text-font);
