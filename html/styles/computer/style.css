@@ -154,6 +154,7 @@ body.terminal {
   z-index: 2;
   padding: 5px 0px;
   top: 0;
+  margin: 2px 5px;
 }
 .terminal header#top #logo {
   display: inline-block;

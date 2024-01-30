@@ -104,6 +104,7 @@
   min-height: 100px;
   width: calc(100% - 50px);
   height: 500px;
+  border: 2px solid var(--color);
 }
 .terminal #content iframe * {
   background-color: var(--bg);
@@ -191,8 +192,9 @@
 .terminal #pop-ups .pop-up {
   z-index: inherit;
   border: 2px solid var(--color);
-  width: attr(width);
-  height: attr(height);
+  background-color: var(--bg);
+  color: var(--color);
+  border-color: var(--border-color);
 }
 
 /*# sourceMappingURL=gui.css.map */

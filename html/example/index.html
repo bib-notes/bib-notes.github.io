@@ -88,8 +88,22 @@ and open the template in the editor.
                             <h5>Heading 5</h5>
                             <h6>Heading 6</h6>
                             <p>
-                                This is a paragraph element. this element is useful for making paragraphs 
-                                in webpage sections.                                
+                                This is a paragraph element. this element is useful for making paragraphs
+                                in webpage sections.
+                            </p>
+                            <details>
+                                <summary>Question</summary>
+                                <p>
+                                    There was a man who fell on the side of a road and couldn't get up.
+                                    His friends were walking down this road, and sees their friend and instead of helping him, 
+                                    they walk past him. later, a stranger was walking down that road, stumbles upon the 
+                                    fallen man, and helps him.
+                                    Who was better and why? 
+                                </p>
+                            </details>
+                            <p>
+                                <em>Emphasized Text</em>
+
                             </p>
                         </article>
                     </section>
@@ -97,13 +111,52 @@ and open the template in the editor.
                         <h2>Media</h2>
                         <article>
                             <p>This is the media section. Here you can view</p>
+                            <figure>
+                                <img src="../img/bin.png" width="250" height="250">
 
+                                <figcaption>Binary: Jesus is King</figcaption>
+                            </figure>
+                            <canvas id="myCanvas" width="200" height="200"
+                                style="border: 2px solid var(--color);"></canvas>
                         </article>
                     </section>
                     <section class="main-section" id="table" data-toggle="off">
                         <h2>h</h2>
                         <article>
-
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>E</th>
+                                        <th></th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </article>
+                    </section>
+                    <section class="main-section" id="form" data-toggle="on">
+                        <h2>form</h2>
+                        <article>
+                            <form id="_form">
+                                <fieldset>
+                                    <legend>Inputs</legend>
+                                    <label for="_name">Text</label>
+                                    <input type="text" id="_name" width="50">
+                                    <input type="email" id="_email" placeholder="user@email.dom">
+                                    <input type="number" id="">
+                                    <input type="date" id="_dob" placeholder="MM/DD/YYYY">
+                                    <input type="radio" id="fem">
+                                    <input type="submit" value="submit">
+                                    <input type="hidden" id="sex" value="">
+                                </fieldset>
+                            </form>
                         </article>
                     </section>
                 </main>

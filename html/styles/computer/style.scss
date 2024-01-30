@@ -56,6 +56,8 @@
     --green-fg: #5bf870;
     --blue-bg: #4242e7;
     --blue-fg: #a5a5ff;
+    --footer-height: 40px;
+    --nav-btn-size: 40px;
     // --green-bg: 5, 50, 30;
     // --green-fg: 91, 248, 112;
     // --red-bg: 27, 3, 2;
@@ -206,7 +208,7 @@ body.terminal {
         z-index: 2;
         padding: 5px 0px;
         top: 0;
-        
+        margin: 2px 5px;
         #logo {
             display: inline-block;
             width: fit-content;
@@ -217,20 +219,21 @@ body.terminal {
             position: relative;
             z-index: inherit;
             font-family: Rainbow100, var(--text-font);
+            left: var(--nav-btn-size);
         }
         
-        #nav-toggle {
-            width: 40px;
-            height: 40px;
-            &:hover {
-                background: $color;
-                color: $bg;
-                font-weight: bold;
-            }
-            img {
-                margin: auto;
-            }
-        }
+        // #nav-toggle {
+        //     width: 40px;
+        //     height: 40px;
+        //     &:hover {
+        //         background: $color;
+        //         color: $bg;
+        //         font-weight: bold;
+        //     }
+        //     img {
+        //         margin: auto;
+        //     }
+        // }
     }
 
     #screen {
@@ -269,6 +272,7 @@ body.terminal {
         font-family: AcerVga8_2y, var(--text-font);
         font-size: 16px;
         // overflow-y: auto;
+
         position: relative;
         top: 50px;
     }
@@ -280,7 +284,7 @@ body.terminal {
         width: 100%;
         padding-top: 5px;
         bottom: 0;
-        height: 40px;
+        height: var(--footer-height);
         border-top: 1px solid $color;
         position: fixed;
         background-color: var(--main-bg);
@@ -441,8 +445,8 @@ body.terminal {
 
 #container {
     #nav-toggle {
-        float: right;
-        right: 5px;
+        float: left;
+        left: 0;
         top: 0;
         position: absolute;
         width: 40px;
@@ -488,7 +492,7 @@ body.terminal {
         z-index: 2;
         box-shadow: 3px 3px $color;
         animation: shadow 3s infinite, box-shadow 3s infinite;
-        right: 5px;
+        left: 5px;
         width: 150px;
         height: fit-content;
         max-height: 350px;

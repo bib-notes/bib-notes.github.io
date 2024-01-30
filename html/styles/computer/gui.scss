@@ -114,6 +114,7 @@ $bh: var(--bar-height);
     
 .terminal {
     #content {
+
         iframe {
             // @include colors;
             
@@ -121,6 +122,7 @@ $bh: var(--bar-height);
             min-height: 100px;
             width: calc(100% - 50px);
             height: 500px;
+            border: 2px solid $color;
             * {
                 @include colors;
             }
