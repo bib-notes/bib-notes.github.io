@@ -18,7 +18,7 @@
 |Nix8X8, Rainbow100 | [VileR](https://int10h.org) | [ CC BY-SA 4.0 Deed Attribution-ShareAlike 4.0 International ](https://creativecommons.org/licenses/by-sa/4.0/) 
 | Special Elite Regular | [Astigmatic](https://fonts.google.com/specimen/Special+Elite/about?query=special)
 - Styles:
-  - Static Effect: [SMPTE Color Bars](https://codepen.io/joeyhoer/pen/AaOBdr)
+  - Static Effect: [SMPTE Color Bars](https://codepen.io/joeyhoer/pen/AaOBdr) - TV Noise Effect: https://coderwall.com/p/m-uwvg
   - database: https://github.com/scrollmapper/bible_databases_deuterocanonical
   - 
 
